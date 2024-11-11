@@ -18,3 +18,11 @@ model Task {
   title       String
   description String?
 }
+
+model User {
+  id       Int     @id @default(autoincrement())
+  email    String  @unique
+  password String
+  name     String
+  tel      String?
+}
